@@ -44,14 +44,14 @@ import java.lang.annotation.Target;
  *   }
  * }
  * </pre></blockquote></p>
- * Example using the {@link CacheKey} annotation so that only the domainId parameter is used in key
+ * Example using the {@link CacheKeyParam} annotation so that only the domainId parameter is used in key
  * generation
  * <p><blockquote><pre>
  * package my.app;
  * 
  * public class DomainDao {
  *   &#64;CacheResult
- *   public Domain getDomain(@CacheKey String domainId, Monitor mon) {
+ *   public Domain getDomain(@CacheKeyParam String domainId, Monitor mon) {
  *     ...
  *   }
  * }
