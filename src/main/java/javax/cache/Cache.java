@@ -563,14 +563,12 @@ public interface Cache<K, V> extends Iterable<Cache.Entry<K, V>>, CacheLifecycle
 
         /**
          * Checks for the existence of the entry in the cache
-         * @return
+         * @return true if exists
          */
         boolean exists();
 
         /**
          * Removes the entry from the Cache
-         * <p/>
-         *
          */
         void remove();
 
