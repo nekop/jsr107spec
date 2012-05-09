@@ -16,7 +16,7 @@ package javax.cache;
  */
 public interface CacheManagerFactory {
     /**
-     * Get a named cache manager using the default cache loader as specified by
+     * Get a named cache manager using the default class loader as specified by
      * the implementation.
      *
      * @param name the name of the cache manager
